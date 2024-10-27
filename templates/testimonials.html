@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
+</head>
+<body>
+
+    <header class="text-center bg-dark text-white p-5">
+        <h1 class="display-4 animate__animated animate__fadeInDown">What Our Clients Say</h1>
+        <p class="lead animate__animated animate__fadeInUp">Hear from our satisfied customers.</p>
+    </header>
+
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <p class="card-text">"The scheduling app transformed how we manage appointments. It's user-friendly and reliable!"</p>
+                        <h5 class="card-title">- John Doe</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Owner, Doe Enterprises</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <p class="card-text">"Their custom CRM solution has streamlined our customer interactions. Highly recommend!"</p>
+                        <h5 class="card-title">- Jane Smith</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Manager, Smith & Co.</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <p class="card-text">"Amazing data analytics tools! We can visualize our metrics easily and make informed decisions."</p>
+                        <h5 class="card-title">- Robert Johnson</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Director, Johnson Group</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-light text-center py-3">
+        <p>&copy; 2024 Your Business Name | Helping businesses grow</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+</body>
+</html>
