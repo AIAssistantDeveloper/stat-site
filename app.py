@@ -3,14 +3,15 @@ import psycopg2
 import os
 from dotenv import load_dotenv
 
-# Load environment variables from .env file
-load_dotenv()
+# Load environment variables from .env if it exists
+if os.path.exists(".env"):
+    load_dotenv()
 
 app = Flask(__name__)
 app.secret_key = os.urandom(24)  # Set a secret key for session management
 
-# Get the database connection URI from environment
-DATABASE_URL = os.getenv('DATABASE_URL')
+# Access DATABASE_URL from the environmen
+DATABASE_URL = os.getenv("DATABASE_URL")
 if DATABASE_URL is None:
     raise ValueError("No DATABASE_URL found. Make sure to set it in your environment.")
 
