@@ -85,4 +85,4 @@ def contact():
 
 # Initialize and run Flask
 if __name__ == '__main__':
-    app.run(host='stat-site.onrender.com', port=8000, debug=True)
+    app.run(host='http://stat-site.onrender.com', port=8000, debug=True)

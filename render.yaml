@@ -5,7 +5,7 @@ services:
   - type: web
     name: stat-site
     repo: https://github.com/AIAssistantDeveloper/stat-site
-    buildCommand: gunicorn -w 2 -b stat-site.onrender.com:8000 --timeout 120 --log-level debug --preload app:app
+    buildCommand: gunicorn -w 2 -b http;//stat-site.onrender.com:8000 --timeout 120 --log-level debug --preload app:app
     envVars:
       - key: DATABASE_URL
         value: postgresql://tony:DHbRYytyYGPgXKaHkqY97RXs5ORk8LRB@dpg-csf8h9tsvqrc73fckda0-a:5432/contact_db_jb19
