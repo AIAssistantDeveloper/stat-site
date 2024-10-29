@@ -2,3 +2,4 @@ flask
 python-dotenv
 wheel     # If necessary, install manually using 'pip install --upgrade pip wheel'
 setuptools     # If necessary install manually using 'pip install wheel setuptools pip --upgrade'
+gunicorn
