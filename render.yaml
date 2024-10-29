@@ -10,15 +10,3 @@ services:
       - key: DATABASE_URL
         value: postgresql://tony:DHbRYytyYGPgXKaHkqY97RXs5ORk8LRB@dpg-csf8h9tsvqrc73fckda0-a:5432/contact_db_jb19
 
-# Exported from Render on 2024-10-27T23:44:59Z
-# Using External URL
-#version: "1"
-#services:
-#  - type: web
-#    name: stat-site
-#    repo: https://github.com/AIAssistantDeveloper/stat-site
-#    buildCommand: gunicorn -w 4 -b 0.0.0.0:8000 app:app
-
-#    envVars:
-#      - key: DATABASE_URL
-#        value: postgresql://tony:DHbRYytyYGPgXKaHkqY97RXs5ORk8LRB@dpg-csf8h9tsvqrc73fckda0-a/contact_db_jb19
