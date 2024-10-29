@@ -1,4 +1,4 @@
-flask=3.0.3
+flask
 python-dotenv=1.0.1
 wheel=0.44.0     # If necessary, install manually using 'pip install --upgrade pip wheel'
 setuptools=75.2.0     # If necessary install manually using 'pip install wheel setuptools pip --upgrade'
